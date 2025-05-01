@@ -4,11 +4,11 @@ import Phone from "./assets/Phone.webp";
 import Laptop from "./assets/laptop.webp";
 import Tv from "./assets/tvv.webp";
 import Tablet from "./assets/tablet.webp";
-import Pc from "./assets/Desktop.webp";
+
 
 
 import { Swiper, SwiperSlide} from 'swiper/react';
-import { Parallax, Pagination, Navigation, Autoplay} from 'swiper/modules';
+import { Parallax,  Navigation, Autoplay} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';

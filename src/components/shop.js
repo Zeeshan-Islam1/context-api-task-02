@@ -8,7 +8,7 @@ import Button from "react-bootstrap/Button";
 import { RiArrowGoBackFill } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 
-import About from "./About";
+
 
 import Shop1 from "./assets/12pro2.webp";
 import Shop2 from "./assets/techno.webp";

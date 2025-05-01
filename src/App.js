@@ -1,6 +1,6 @@
 import './App.css';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
-import { CartProvider } from "./CartContext";
+
 
 // Components
 import Header from './components/Header';

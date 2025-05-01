@@ -1,6 +1,5 @@
 import "./header.css";
 import { useEffect, useState } from "react";
-import Icon from "./assets/shopyfy-Icon.png";
 import Icon2 from "./assets/shopnity-Icon.png";
 
 function Header() {

@@ -9,7 +9,6 @@ export default function Login() {
         e.preventDefault();
 
         const userName = email.split("@")[0];
-        const USerName = userName.replace(".", " ");
 
         localStorage.setItem("userEmail", email);
         localStorage.setItem("userPassword", password);

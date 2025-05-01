@@ -8,7 +8,7 @@ import Button from "react-bootstrap/Button";
 import { RiArrowGoBackFill } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 
-import Laptop1 from "./assets/laptop1.jpg";
+
 import Laptop2 from "./assets/laptop2.jpg";
 import Laptop3 from "./assets/laptop3.jpg";
 import Laptop4 from "./assets/laptop4.webp";

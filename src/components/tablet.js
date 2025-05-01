@@ -1,0 +1,124 @@
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Card from "react-bootstrap/Card";
+import Carousel from "react-bootstrap/Carousel";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
+import { RiArrowGoBackFill } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
+
+import Tablet from "./assets/tablet1.webp";
+import Tablet2 from "./assets/tablet2.webp";
+import Tablet3 from "./assets/tablet3.webp";
+import Tablet4 from "./assets/tablet4.webp";
+import Tablet5 from "./assets/tablet5.webp";
+import Tablet6 from "./assets/tablet6.webp";
+
+export default function TabletPage() {
+  const navigate = useNavigate();
+
+  const handleBuyNow = () => {
+    navigate("/");
+  };
+
+  return (
+    <div className="container my-5">
+      <h1 className="mb-4 text-center">Tablet Section</h1>
+
+      <Carousel indicators={false}>
+        <Carousel.Item>
+          <Row className="g-4 justify-content-center">
+            <Col md={4}>
+              <Card className="h-100 text-center">
+                <div className="card-image-container">
+                  <img src={Tablet2} alt="Galaxy Tab A8" className="custom-card-img" />
+                </div>
+                <Card.Body>
+                  <Card.Title>Galaxy Tab A8</Card.Title>
+                  <Card.Text>Entertainment-ready tablet with immersive display and Dolby Atmos audio.</Card.Text>
+                  <p className="fw-bold text-success mb-2">Price: ₹15,999</p>
+                  <Button variant="dark" onClick={handleBuyNow}>Buy Now</Button>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col md={4}>
+              <Card className="h-100 text-center">
+                <div className="card-image-container">
+                  <img src={Tablet3} alt="iPad 9th Gen" className="custom-card-img" />
+                </div>
+                <Card.Body>
+                  <Card.Title>iPad 9th Gen</Card.Title>
+                  <Card.Text>A powerful iPad with A13 Bionic chip and Retina display.</Card.Text>
+                  <p className="fw-bold text-success mb-2">Price: ₹29,999</p>
+                  <Button variant="dark" onClick={handleBuyNow}>Buy Now</Button>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col md={4}>
+              <Card className="h-100 text-center">
+                <div className="card-image-container">
+                  <img src={Tablet4} alt="Lenovo Tab M10" className="custom-card-img" />
+                </div>
+                <Card.Body>
+                  <Card.Title>Lenovo Tab M10</Card.Title>
+                  <Card.Text>Compact and efficient tablet for casual use and browsing.</Card.Text>
+                  <p className="fw-bold text-success mb-2">Price: ₹12,499</p>
+                  <Button variant="dark" onClick={handleBuyNow}>Buy Now</Button>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col md={4}>
+              <Card className="h-100 text-center">
+                <div className="card-image-container">
+                  <img src={Tablet5} alt="Realme Pad" className="custom-card-img" />
+                </div>
+                <Card.Body>
+                  <Card.Title>Realme Pad</Card.Title>
+                  <Card.Text>Ultra-slim tablet with long battery life and immersive display.</Card.Text>
+                  <p className="fw-bold text-success mb-2">Price: ₹13,999</p>
+                  <Button variant="dark" onClick={handleBuyNow}>Buy Now</Button>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col md={4}>
+              <Card className="h-100 text-center">
+                <div className="card-image-container">
+                  <img src={Tablet6} alt="Microsoft Surface Go 3" className="custom-card-img" />
+                </div>
+                <Card.Body>
+                  <Card.Title>Surface Go 3</Card.Title>
+                  <Card.Text>Portable 2-in-1 with Windows 11 and touchscreen experience.</Card.Text>
+                  <p className="fw-bold text-success mb-2">Price: ₹42,999</p>
+                  <Button variant="dark" onClick={handleBuyNow}>Buy Now</Button>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col md={4}>
+              <Card className="h-100 text-center">
+                <div className="card-image-container">
+                  <img src={Tablet} alt="Xiaomi Pad 6" className="custom-card-img" />
+                </div>
+                <Card.Body>
+                  <Card.Title>Xiaomi Pad 6</Card.Title>
+                  <Card.Text>Performance-focused tablet with Snapdragon chipset and 120Hz display.</Card.Text>
+                  <p className="fw-bold text-success mb-2">Price: ₹26,999</p>
+                  <Button variant="dark" onClick={handleBuyNow}>Buy Now</Button>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </Carousel.Item>
+      </Carousel>
+
+            <a href="/" className="go-back">
+                <RiArrowGoBackFill className="back-icon" /> Back to Home
+              </a>
+    </div>
+  );
+}

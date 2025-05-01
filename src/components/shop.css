@@ -1,0 +1,18 @@
+.custom-card-img {
+    width: 50%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .back-icon{
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      margin-top: 10px;
+  }
+  .back-icon:hover{
+      width: 45px;
+      height: 45px;
+  }
+  

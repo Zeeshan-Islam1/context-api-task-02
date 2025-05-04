@@ -8,18 +8,20 @@ import Button from "react-bootstrap/Button";
 import { RiArrowGoBackFill } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 
-import Tablet from "./assets/tablet1.webp";
-import Tablet2 from "./assets/tablet2.webp";
-import Tablet3 from "./assets/tablet3.webp";
-import Tablet4 from "./assets/tablet4.webp";
-import Tablet5 from "./assets/tablet5.webp";
-import Tablet6 from "./assets/tablet6.webp";
+import Tablet1 from "./assets/tablet1.png";
+import Tablet2 from "./assets/tablet2.png";
+import Tablet3 from "./assets/tablet3.png";
+import Tablet4 from "./assets/tablet4.png";
+import Tablet5 from "./assets/tablet5.png";
+import Tablet6 from "./assets/tablet6.png";
+
+
 
 export default function TabletPage() {
   const navigate = useNavigate();
 
-  const handleBuyNow = () => {
-    navigate("/");
+  const handleBuyNow = (id) => {
+    navigate(`/tablet/${id}`);;
   };
 
   return (
@@ -38,7 +40,7 @@ export default function TabletPage() {
                   <Card.Title>Galaxy Tab A8</Card.Title>
                   <Card.Text>Entertainment-ready tablet with immersive display and Dolby Atmos audio.</Card.Text>
                   <p className="fw-bold text-success mb-2">Price: ₹15,999</p>
-                  <Button variant="dark" onClick={handleBuyNow}>Buy Now</Button>
+                  <Button variant="dark"onClick={() => handleBuyNow(1 ,'tablet')}> Buy Now</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -52,7 +54,7 @@ export default function TabletPage() {
                   <Card.Title>iPad 9th Gen</Card.Title>
                   <Card.Text>A powerful iPad with A13 Bionic chip and Retina display.</Card.Text>
                   <p className="fw-bold text-success mb-2">Price: ₹29,999</p>
-                  <Button variant="dark" onClick={handleBuyNow}>Buy Now</Button>
+                  <Button variant="dark"onClick={() => handleBuyNow(2 ,'tablet')}> Buy Now</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -66,7 +68,7 @@ export default function TabletPage() {
                   <Card.Title>Lenovo Tab M10</Card.Title>
                   <Card.Text>Compact and efficient tablet for casual use and browsing.</Card.Text>
                   <p className="fw-bold text-success mb-2">Price: ₹12,499</p>
-                  <Button variant="dark" onClick={handleBuyNow}>Buy Now</Button>
+                  <Button variant="dark"onClick={() => handleBuyNow(3 ,'tablet')}> Buy Now</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -80,7 +82,7 @@ export default function TabletPage() {
                   <Card.Title>Realme Pad</Card.Title>
                   <Card.Text>Ultra-slim tablet with long battery life and immersive display.</Card.Text>
                   <p className="fw-bold text-success mb-2">Price: ₹13,999</p>
-                  <Button variant="dark" onClick={handleBuyNow}>Buy Now</Button>
+                  <Button variant="dark"onClick={() => handleBuyNow(4 ,'tablet')}> Buy Now</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -94,7 +96,7 @@ export default function TabletPage() {
                   <Card.Title>Surface Go 3</Card.Title>
                   <Card.Text>Portable 2-in-1 with Windows 11 and touchscreen experience.</Card.Text>
                   <p className="fw-bold text-success mb-2">Price: ₹42,999</p>
-                  <Button variant="dark" onClick={handleBuyNow}>Buy Now</Button>
+                  <Button variant="dark"onClick={() => handleBuyNow(5 ,'tablet')}> Buy Now</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -102,13 +104,13 @@ export default function TabletPage() {
             <Col md={4}>
               <Card className="h-100 text-center">
                 <div className="card-image-container">
-                  <img src={Tablet} alt="Xiaomi Pad 6" className="custom-card-img" />
+                  <img src={Tablet1} alt="Xiaomi Pad 6" className="custom-card-img" />
                 </div>
                 <Card.Body>
                   <Card.Title>Xiaomi Pad 6</Card.Title>
                   <Card.Text>Performance-focused tablet with Snapdragon chipset and 120Hz display.</Card.Text>
                   <p className="fw-bold text-success mb-2">Price: ₹26,999</p>
-                  <Button variant="dark" onClick={handleBuyNow}>Buy Now</Button>
+                  <Button variant="dark"onClick={() => handleBuyNow(6 ,'tablet')}> Buy Now</Button>
                 </Card.Body>
               </Card>
             </Col>

@@ -9,19 +9,18 @@ import { RiArrowGoBackFill } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 
 
-import Laptop2 from "./assets/laptop2.jpg";
-import Laptop3 from "./assets/laptop3.jpg";
-import Laptop4 from "./assets/laptop4.webp";
-import Laptop5 from "./assets/laptop5.webp";
-import Laptop6 from "./assets/laptop6.jpg";
-import Laptop7 from "./assets/laptop7.webp";
+import Laptop2 from "./assets/laptop2.png";
+import Laptop3 from "./assets/laptop3.png";
+import Laptop4 from "./assets/laptop4.png";
+import Laptop5 from "./assets/laptop5.png";
+import Laptop6 from "./assets/laptop6.png";
+import Laptop7 from "./assets/laptop7.png";
 
 import "./laptops.css";
 
 export default function Laptops() {
   const navigate = useNavigate();
 
-  // Handle Buy Now - passing the product id to the product detail page
   const handleBuyNow = (id) => {
     navigate(`/product/${id}`);
   };
@@ -43,7 +42,7 @@ export default function Laptops() {
                   <Card.Title>Dell Inspiron 15</Card.Title>
                   <Card.Text>15.6" FHD, Intel i5 12th Gen, 8GB RAM, 512GB SSD</Card.Text>
                   <p className="fw-bold text-success mb-2">Price: ₹57,999</p>
-                  <Button variant="dark" onClick={() => handleBuyNow(1)}>Buy Now</Button>
+                  <Button variant="dark" onClick={() => handleBuyNow(1, "laptop")}>Buy Now</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -58,7 +57,7 @@ export default function Laptops() {
                   <Card.Title>HP Pavilion x360</Card.Title>
                   <Card.Text>Touchscreen, 11th Gen i5, 512GB SSD, Windows 11</Card.Text>
                   <p className="fw-bold text-success mb-2">Price: ₹62,499</p>
-                  <Button variant="dark" onClick={() => handleBuyNow(2)}>Buy Now</Button>
+                  <Button variant="dark" onClick={() => handleBuyNow(2, "laptop")}>Buy Now</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -73,7 +72,7 @@ export default function Laptops() {
                   <Card.Title>Asus VivoBook 14</Card.Title>
                   <Card.Text>Compact design, Ryzen 5, 8GB RAM, 512GB SSD</Card.Text>
                   <p className="fw-bold text-success mb-2">Price: ₹49,999</p>
-                  <Button variant="dark" onClick={() => handleBuyNow(3)}>Buy Now</Button>
+                  <Button variant="dark" onClick={() => handleBuyNow(3, "laptop")}>Buy Now</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -88,7 +87,7 @@ export default function Laptops() {
                   <Card.Title>MacBook Air M1</Card.Title>
                   <Card.Text>Powerful M1 chip, 8GB RAM, 256GB SSD, 13.3" Retina</Card.Text>
                   <p className="fw-bold text-success mb-2">Price: ₹84,900</p>
-                  <Button variant="dark" onClick={() => handleBuyNow(4)}>Buy Now</Button>
+                  <Button variant="dark" onClick={() => handleBuyNow(4, "laptop")}>Buy Now</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -103,7 +102,7 @@ export default function Laptops() {
                   <Card.Title>IdeaPad Gaming 3</Card.Title>
                   <Card.Text>15.6" FHD, Ryzen 5, RTX 3050, 16GB RAM</Card.Text>
                   <p className="fw-bold text-success mb-2">Price: ₹68,999</p>
-                  <Button variant="dark" onClick={() => handleBuyNow(5)}>Buy Now</Button>
+                  <Button variant="dark" onClick={() => handleBuyNow(5, "laptop")}>Buy Now</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -118,7 +117,7 @@ export default function Laptops() {
                   <Card.Title>Acer Aspire 7</Card.Title>
                   <Card.Text>Ryzen 5 Hexa Core, GTX 1650, 8GB RAM, 512GB SSD</Card.Text>
                   <p className="fw-bold text-success mb-2">Price: ₹52,999</p>
-                  <Button variant="dark" onClick={() => handleBuyNow(6)}>Buy Now</Button>
+                  <Button variant="dark" onClick={() => handleBuyNow(6, "laptop")}>Buy Now</Button>
                 </Card.Body>
               </Card>
             </Col>

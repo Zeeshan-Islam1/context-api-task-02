@@ -10,21 +10,22 @@ import { useNavigate } from "react-router-dom";
 
 
 
-import Shop1 from "./assets/12pro2.webp";
-import Shop2 from "./assets/techno.webp";
-import Shop3 from "./assets/galaxy.webp";
-import Shop4 from "./assets/Xiaom3.webp";
-import Shop5 from "./assets/redmi.webp";
-import Shop6 from "./assets/XR.webp";
+import Shop1 from "./assets/12pro2.png";
+import Shop2 from "./assets/techno.png";
+import Shop3 from "./assets/galaxy.png";
+import Shop4 from "./assets/Xiaom3.png";
+import Shop5 from "./assets/redmi.png";
+import Shop6 from "./assets/XR.png";
 
 import "./shop.css";
 
 function Shop() {
   const navigate = useNavigate();
 
-  const handleBuyNow = () => {
-    navigate("/");
+  const handleBuyNow = (id) => {
+    navigate(`/mobile/${id}`);
   };
+  
 
   return (
     <div className="container my-5">
@@ -49,7 +50,7 @@ function Shop() {
                     Bionic chip and stunning camera.
                   </Card.Text>
                   <p className="fw-bold text-success mb-2">Price: 	₹89,999</p>
-                  <Button variant="dark" onClick={handleBuyNow}>
+                  <Button variant="dark"onClick={() => handleBuyNow(1 ,'mobile')}>
                     Buy Now
                   </Button>
                 </Card.Body>
@@ -72,7 +73,7 @@ function Shop() {
                     battery life and performance for its price.
                   </Card.Text>
                   <p className="fw-bold text-success mb-2">Price: 	₹7,499</p>
-                  <Button variant="dark" onClick={handleBuyNow}>
+                  <Button variant="dark" onClick={() => handleBuyNow(2, 'mobile')}>
                     Buy Now
                   </Button>
                 </Card.Body>
@@ -95,7 +96,7 @@ function Shop() {
                     processing for smooth multitasking.
                   </Card.Text>
                   <p className="fw-bold text-success mb-2">Price: ₹29,999</p>
-                  <Button variant="dark" onClick={handleBuyNow}>
+                  <Button variant="dark" onClick={() => handleBuyNow(3, 'mobile')}>
                     Buy Now
                   </Button>
                 </Card.Body>
@@ -118,7 +119,7 @@ function Shop() {
                     top-tier performance and sleek design.
                   </Card.Text>
                   <p className="fw-bold text-success mb-2">Price: 	₹39,499</p>
-                  <Button variant="dark" onClick={handleBuyNow}>
+                  <Button variant="dark" onClick={() => handleBuyNow(4, 'mobile')}>
                     Buy Now
                   </Button>
                 </Card.Body>
@@ -141,7 +142,7 @@ function Shop() {
                     value-for-money experience.
                   </Card.Text>
                   <p className="fw-bold text-success mb-2">Price: ₹15,999</p>
-                  <Button variant="dark" onClick={handleBuyNow}>
+                  <Button variant="dark" onClick={() => handleBuyNow(5, 'mobile')}>
                     Buy Now
                   </Button>
                 </Card.Body>
@@ -164,7 +165,7 @@ function Shop() {
                     everyday use with iOS features.
                   </Card.Text>
                   <p className="fw-bold text-success mb-2">Price: ₹47,999</p>
-                  <Button variant="dark" onClick={handleBuyNow}>
+                  <Button variant="dark" onClick={() => handleBuyNow(6, 'mobile')}>
                     Buy Now
                   </Button>
                 </Card.Body>

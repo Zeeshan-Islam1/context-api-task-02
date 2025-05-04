@@ -15,11 +15,13 @@ import Laptops from "../src/components/laptops";
 import Tv from "../src/components/Tv";
 import Tablet from "../src/components/tablet";
 
-import ProductPage from "./components/product";
 import ProductDetailPage from "./components/productDetail";
+import MobileDetails  from './components/MobileDetails';
+import TvDetails  from './components/tvDetails';
+import TabletDetail  from './components/tabletDetails';
 
-// Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const Layout = () => (
   <>
@@ -70,18 +72,28 @@ const router = createBrowserRouter([
         path: "tablet",
         element: <Tablet />
       },
-      // Add routes for Product and Product Details
       {
         path: "product/:id",
         element: <ProductDetailPage />
       },
       {
-        path: "product",
-        element: <ProductPage />
+        path: "mobile/:id",
+        element: <MobileDetails />
       },
+      {
+        path : "tv/:id",
+        element : <TvDetails />
+      },
+      {
+        path: "tablet/:id",
+        element: <TabletDetail />
+      },
+
     ]
   }
 ]);
+
+
 
 const App = () => {
   return <RouterProvider router={router} />;

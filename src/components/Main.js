@@ -1,5 +1,4 @@
 import React from "react";
-import MainImg from "./assets/fashion-ecommerce.webp";
 import Phone from "./assets/Phone.webp";
 import Laptop from "./assets/laptop.webp";
 import Tv from "./assets/tvv.webp";
@@ -20,6 +19,10 @@ import Banner3 from "./assets/banner3.jpg"
 import Banner4 from "./assets/fashion_20merchandising.webp"
 
 
+import SliderMain1 from "../components/assets/mainSlider.png"
+import SliderMain2 from "../components/assets/mainSlider2.png"
+
+
 import "./Main.css";
 
 export default function Main() {
@@ -27,65 +30,100 @@ export default function Main() {
     <>
       {/* Hero Section */}
       <div className="container my-5">
-        <div className="row align-items-center">
-          {/* Left Column */}
-          <div className="headingMain col-md-6">
-            <h1
-              style={{
-                fontSize: "67px",
-                fontFamily: '"Bebas Neue", sans-serif',
-                fontWeight: 400,
-                fontStyle: "normal",
-              }}
-              className="mb-3"
-            >
-              Welcome to Shopify
-            </h1>
-            <p
-              style={{ fontSize: "20px", fontWeight: 400, fontStyle: "normal" }}
-            >
-              Shopify is your all-in-one commerce platform to start, run, and
-              grow a business. Whether you're selling online, in-store, or on
-              social media — Shopify is your tool to build a brand.
-            </p>
-            <button
-              className="btn btn-dark"
-              style={{
-                fontSize: "20px",
-                fontFamily: '"Bebas Neue", sans-serif',
-                fontWeight: 400,
-                fontStyle: "italic",
-              }}
-            >
-              <a
-                style={{ textDecoration: "none", color: "white" , fontSize: "30px" }}
-                href="/"
-              >
-                Shop Now
-              </a>
-            </button>
-          </div>
+  <div className="row align-items-center">
+    {/* Left Column (Text) */}
+    <div className="headingMain col-md-6">
+      <h1
+        style={{
+          fontSize: '67px',
+          fontFamily: '"Bebas Neue", sans-serif',
+          fontWeight: 400,
+          fontStyle: 'normal',
+        }}
+        className="mb-3"
+      >
+        Welcome to Shopinity
+      </h1>
+      <p style={{ fontSize: '20px', fontWeight: 400, fontStyle: 'normal' }}>
+        Shopify is your all-in-one commerce platform to start, run, and grow a business. Whether you're selling online, in-store, or on social media — Shopify is your tool to build a brand.
+      </p>
+      <button
+        className="btn btn-dark"
+        style={{
+          fontSize: '20px',
+          fontFamily: '"Bebas Neue", sans-serif',
+          fontWeight: 400,
+          fontStyle: 'italic',
+        }}
+      >
+        <a style={{ textDecoration: 'none', color: 'white', fontSize: '30px' }} href="/">
+          Shop Now
+        </a>
+      </button>
+    </div>
 
-          {/* Right Column */}
-          <div className="col-md-6 text-center">
-            <img
-              style={{
-                borderRadius: "20px",
-                boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-                height: "400px",
-                objectFit: "cover",
-              }}
-              src={MainImg}
-              alt="Shopify Items"
-              className="img-fluid"
-            />
-          </div>
-        </div>
-      </div>
+    {/* Right Column (Swiper) */}
+    <div className="col-md-6">
+      <Swiper
+        style={{ width: '100%', height: '100%' }}
+        speed={600}
+        autoplay={{ delay: 1500, disableOnInteraction: false }}
+        parallax={true}
+        navigation={true}
+        modules={[Parallax, Navigation, Autoplay]}
+        className="mySwiper"
+      >
+        <div
+          slot="container-start"
+          className="parallax-bg"
+          style={{
+            backgroundImage: 'url("https://www.pinterest.com/pin/392587292523588290/")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+          data-swiper-parallax="-23%"
+        ></div>
+
+        <SwiperSlide>
+          <img
+            src={Banner2}
+            alt="Slide 1"
+            className="img-fluid"
+            data-swiper-parallax="-300"
+            style={{ width: '100%', maxHeight: '400px', objectFit: 'cover' }}
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img
+            src={Banner3}
+            alt="Slide 2"
+            className="img-fluid"
+            data-swiper-parallax="-300"
+            style={{ width: '100%', maxHeight: '400px', objectFit: 'cover' }}
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img
+            src={Banner4}
+            alt="Slide 3"
+            className="img-fluid"
+            data-swiper-parallax="-300"
+            style={{ width: '100%', maxHeight: '400px', objectFit: 'cover' }}
+          />
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  </div>
+</div>
 
       {/* Slider Section */}
       <div className="container my-5">
         <div className="row" style={{ position: "relative" }}>
+          <div>
+            <h1 className="mb-4 text-center">Best Selling Products</h1>
+          </div>
           <div
             className="Slider-Ovarly"
             style={{
@@ -100,13 +138,11 @@ export default function Main() {
             <div className="slider-wrapper">
          <Swiper cla
   style={{
-    // '--swiper-navigation-color': '#fff',
-    // '--swiper-pagination-color': '#fff',
     position: 'relative',
     zIndex: 2, 
   }}
   speed={600}
-  autoplay={{ delay: 2000, disableOnInteraction: false }}
+  autoplay={{ delay: 1500, disableOnInteraction: false }}
   parallax={true}
   navigation={true}
   modules={[Parallax, Navigation, Parallax, Autoplay]}
@@ -123,7 +159,7 @@ export default function Main() {
 
   <SwiperSlide>
     <img
-      src={Banner2}
+      src={SliderMain1}
       alt="Slide 1"
       className="img-fluid"
       data-swiper-parallax="-300"
@@ -133,7 +169,7 @@ export default function Main() {
 
   <SwiperSlide>
     <img
-      src={Banner3}
+      src={SliderMain2}
       alt="Slide 2"
       className="img-fluid"
       data-swiper-parallax="-300"

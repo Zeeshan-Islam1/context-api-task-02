@@ -1,6 +1,8 @@
 import "./header.css";
 import { useEffect, useState } from "react";
 import Icon2 from "./assets/shopnity-Icon.png";
+import { PiShoppingCartLight } from "react-icons/pi";
+
 
 function Header() {
   const [theme, setTheme] = useState(() => {
@@ -32,6 +34,9 @@ function Header() {
             <li><a href="/contact">Contact</a></li>
             <li><a href="/login">Login</a></li>
             <li><a href="/profile">Profile</a></li>
+      <div className="cart" style={{ fontSize: '30px', cursor: 'pointer' }}>
+  <PiShoppingCartLight />
+</div>
             
             <button className='Modebtn' onClick={()=> ToggleTheme()}>{theme === 'light-theme' ? 'Dark Mode' : 'Light Mode'}</button>
           </ul>

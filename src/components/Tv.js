@@ -19,10 +19,10 @@ import "./laptops.css";
 
 function Tv() {
   const navigate = useNavigate();
-
-  const handleBuyNow = () => {
-    navigate("/");
+  const handleBuyNow = (id, category) => {
+    navigate(`/tv/${id}`);
   };
+  
 
   return (
     <div className="container my-5">
@@ -40,7 +40,7 @@ function Tv() {
                   <Card.Title>Samsung Neo QLED</Card.Title>
                   <Card.Text>Quantum Matrix Technology and ultra-fine light control for stunning clarity.</Card.Text>
                   <p className="fw-bold text-success mb-2">Price: ₹1,29,999</p>
-                  <Button variant="dark" onClick={handleBuyNow}>Buy Now</Button>
+                  <Button variant="dark"onClick={() => handleBuyNow(1 ,'tv')}> Buy Now</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -54,7 +54,7 @@ function Tv() {
                   <Card.Title>LG C2 OLED</Card.Title>
                   <Card.Text>Self-lit pixels, Dolby Vision IQ & webOS Smart features for top performance.</Card.Text>
                   <p className="fw-bold text-success mb-2">Price: ₹1,05,000</p>
-                  <Button variant="dark" onClick={handleBuyNow}>Buy Now</Button>
+                  <Button variant="dark"onClick={() => handleBuyNow(2 ,'tv')}> Buy Now</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -68,7 +68,7 @@ function Tv() {
                   <Card.Title>Sony Bravia XR</Card.Title>
                   <Card.Text>Cognitive Processor XR and Full Array LED for incredible contrast and realism.</Card.Text>
                   <p className="fw-bold text-success mb-2">Price: ₹1,10,999</p>
-                  <Button variant="dark" onClick={handleBuyNow}>Buy Now</Button>
+                  <Button variant="dark"onClick={() => handleBuyNow(3 ,'tv')}> Buy Now</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -82,7 +82,7 @@ function Tv() {
                   <Card.Title>TCL 4K QLED</Card.Title>
                   <Card.Text>Android TV with HDR10+ and Dolby Atmos for a cinematic experience.</Card.Text>
                   <p className="fw-bold text-success mb-2">Price: ₹45,499</p>
-                  <Button variant="dark" onClick={handleBuyNow}>Buy Now</Button>
+                  <Button variant="dark"onClick={() => handleBuyNow(4 ,'tv')}> Buy Now</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -96,7 +96,7 @@ function Tv() {
                   <Card.Title>OnePlus Y1S Pro</Card.Title>
                   <Card.Text>4K Ultra HD display, Gamma Engine, and bezel-less design.</Card.Text>
                   <p className="fw-bold text-success mb-2">Price: ₹32,999</p>
-                  <Button variant="dark" onClick={handleBuyNow}>Buy Now</Button>
+                  <Button variant="dark"onClick={() => handleBuyNow(5 ,'tv')}> Buy Now</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -110,7 +110,7 @@ function Tv() {
                   <Card.Title>Mi TV 5X</Card.Title>
                   <Card.Text>Premium metallic design, Vivid Picture Engine 2, and Dolby Audio.</Card.Text>
                   <p className="fw-bold text-success mb-2">Price: ₹29,499</p>
-                  <Button variant="dark" onClick={handleBuyNow}>Buy Now</Button>
+                  <Button variant="dark"onClick={() => handleBuyNow(6 ,'tv')}> Buy Now</Button>
                 </Card.Body>
               </Card>
             </Col>

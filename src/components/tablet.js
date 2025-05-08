@@ -34,7 +34,7 @@ export default function TabletPage() {
             <Col md={4}>
               <Card className="h-100 text-center">
                 <div className="card-image-container">
-                  <img src={Tablet2} alt="Galaxy Tab A8" className="custom-card-img" />
+                  <img src={Tablet1} alt="Galaxy Tab A8" className="custom-card-img" />
                 </div>
                 <Card.Body>
                   <Card.Title>Galaxy Tab A8</Card.Title>
@@ -48,7 +48,7 @@ export default function TabletPage() {
             <Col md={4}>
               <Card className="h-100 text-center">
                 <div className="card-image-container">
-                  <img src={Tablet3} alt="iPad 9th Gen" className="custom-card-img" />
+                  <img src={Tablet2} alt="iPad 9th Gen" className="custom-card-img" />
                 </div>
                 <Card.Body>
                   <Card.Title>iPad 9th Gen</Card.Title>
@@ -62,7 +62,7 @@ export default function TabletPage() {
             <Col md={4}>
               <Card className="h-100 text-center">
                 <div className="card-image-container">
-                  <img src={Tablet4} alt="Lenovo Tab M10" className="custom-card-img" />
+                  <img src={Tablet3} alt="Lenovo Tab M10" className="custom-card-img" />
                 </div>
                 <Card.Body>
                   <Card.Title>Lenovo Tab M10</Card.Title>
@@ -76,7 +76,7 @@ export default function TabletPage() {
             <Col md={4}>
               <Card className="h-100 text-center">
                 <div className="card-image-container">
-                  <img src={Tablet5} alt="Realme Pad" className="custom-card-img" />
+                  <img src={Tablet4} alt="Realme Pad" className="custom-card-img" />
                 </div>
                 <Card.Body>
                   <Card.Title>Realme Pad</Card.Title>
@@ -90,7 +90,7 @@ export default function TabletPage() {
             <Col md={4}>
               <Card className="h-100 text-center">
                 <div className="card-image-container">
-                  <img src={Tablet6} alt="Microsoft Surface Go 3" className="custom-card-img" />
+                  <img src={Tablet5} alt="Microsoft Surface Go 3" className="custom-card-img" />
                 </div>
                 <Card.Body>
                   <Card.Title>Surface Go 3</Card.Title>
@@ -104,7 +104,7 @@ export default function TabletPage() {
             <Col md={4}>
               <Card className="h-100 text-center">
                 <div className="card-image-container">
-                  <img src={Tablet1} alt="Xiaomi Pad 6" className="custom-card-img" />
+                  <img src={Tablet6} alt="Xiaomi Pad 6" className="custom-card-img" />
                 </div>
                 <Card.Body>
                   <Card.Title>Xiaomi Pad 6</Card.Title>

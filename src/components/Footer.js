@@ -19,12 +19,12 @@ export default function Footer() {
     </div>
     <div class="footer-section contact">
       <h3>Contact</h3>
-      <p>Email: support@darkmode.com</p>
+      <p>Email: support@Shopinity.com</p>
       <p>Phone: +91 98765 43210</p>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>&copy; 2025 DarkMode. All rights reserved.</p>
+    <p>&copy; 2025 Shopinity. All rights reserved.</p>
   </div>
 </footer>
 

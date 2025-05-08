@@ -2,10 +2,14 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { RiArrowGoBackFill } from "react-icons/ri";
 import { Button } from "react-bootstrap";
-
+import { useDispatch } from "react-redux";
+import { addToCart } from "../components/Redux/cartSlice";
 import  "./productDetail.css";
+
+
 function MobileDetails() {
   const { id } = useParams();
+  const dispatch = useDispatch();
 
   const mobileDetails = {
     1: {
@@ -53,6 +57,18 @@ function MobileDetails() {
   };
 
   const mobile = mobileDetails[id];
+
+   const handleAddToCart = () => {
+     dispatch(addToCart({
+       id: mobile.id,
+       name: mobile.name,
+       price: mobile.price,
+       image: mobile.image,
+       quantity: 1
+     }));
+   };
+ 
+  
   return (
     <div className="container py-4 text-center">
       <div className="product-details">
@@ -66,9 +82,7 @@ function MobileDetails() {
         <img src={require(`./assets/${mobile?.image}`)} alt={mobile?.name} />
         <br />
    <div class = "Btn-container">
-           <Button variant="dark">Add to Wishlist</Button>
-           <Button variant="dark">Remove from Cart</Button>
-           <Button variant="dark">Add to Cart</Button>
+           <Button variant="dark" onClick={handleAddToCart}>Add to Cart</Button>
                </div>
       </div>
       <a href="/shop" className="go-back">

@@ -6,6 +6,7 @@ import Tablet from "./assets/tablet.webp";
 
 
 
+
 import { Swiper, SwiperSlide} from 'swiper/react';
 import { Parallax,  Navigation, Autoplay} from 'swiper/modules';
 import 'swiper/css';
@@ -14,10 +15,10 @@ import 'swiper/css/pagination';
 import 'swiper/css/parallax';
 
 
-import Banner2 from "./assets/banner2.jpg"
-import Banner3 from "./assets/banner3.jpg"
+import cardimg1 from "./assets/cardimg1.webp"
+import cardimg2 from "./assets/card.jpg"
+import cardimg3 from "./assets/cardimg3.webp"
 import Banner4 from "./assets/fashion_20merchandising.webp"
-
 
 import SliderMain1 from "../components/assets/mainSlider.png"
 import SliderMain2 from "../components/assets/mainSlider2.png"
@@ -29,22 +30,14 @@ export default function Main() {
   return (
     <>
       {/* Hero Section */}
-      <div className="container my-5">
+        <div className="hero">
+      <div className="MainContainer container my-5">
   <div className="row align-items-center">
-    {/* Left Column (Text) */}
-    <div className="headingMain col-md-6">
-      <h1
-        style={{
-          fontSize: '67px',
-          fontFamily: '"Bebas Neue", sans-serif',
-          fontWeight: 400,
-          fontStyle: 'normal',
-        }}
-        className="mb-3"
-      >
+    <div className="headingMain col-md-12 ">
+      <h1  className="mb-3">
         Welcome to Shopinity
       </h1>
-      <p style={{ fontSize: '20px', fontWeight: 400, fontStyle: 'normal' }}>
+      <p>
         Shopify is your all-in-one commerce platform to start, run, and grow a business. Whether you're selling online, in-store, or on social media — Shopify is your tool to build a brand.
       </p>
       <button
@@ -61,68 +54,81 @@ export default function Main() {
         </a>
       </button>
     </div>
+  </div>
+</div>
+      </div>
 
-    {/* Right Column (Swiper) */}
-    <div className="col-md-6">
-      <Swiper
-        style={{ width: '100%', height: '100%' }}
-        speed={600}
-        autoplay={{ delay: 1500, disableOnInteraction: false }}
-        parallax={true}
-        navigation={true}
-        modules={[Parallax, Navigation, Autoplay]}
-        className="mySwiper"
-      >
-        <div
-          slot="container-start"
-          className="parallax-bg"
-          style={{
-            backgroundImage: 'url("https://www.pinterest.com/pin/392587292523588290/")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-          data-swiper-parallax="-23%"
-        ></div>
-
-        <SwiperSlide>
+      <div className="container my-5">
+  <div className="row g-4">
+    {/* Card 1 */}
+    <div className="col-md-4">
+      <div className="card text-white">
+        <div className="position-relative">
           <img
-            src={Banner2}
-            alt="Slide 1"
-            className="img-fluid"
-            data-swiper-parallax="-300"
-            style={{ width: '100%', maxHeight: '400px', objectFit: 'cover' }}
+            src={cardimg1}
+            className="card-img"
+            alt="Card 1"
+            style={{ height: '300px', objectFit: 'cover' }}
           />
-        </SwiperSlide>
+          <div className="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 p-3">
+            <h5 className="card-title">Sports T Shirts </h5>
+            <p className="card-text">Best deals on sports t-shirts.</p>
+            <a href="/tShirts" className="btn btn-light btn-sm mt-2">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <SwiperSlide>
+    {/* Card 2 */}
+    <div className="col-md-4">
+      <div className="card text-white">
+        <div className="position-relative">
           <img
-            src={Banner3}
-            alt="Slide 2"
-            className="img-fluid"
-            data-swiper-parallax="-300"
-            style={{ width: '100%', maxHeight: '400px', objectFit: 'cover' }}
+            src={cardimg2}
+            className="card-img"
+            alt="Card 2"
+            style={{ height: '300px', objectFit: 'cover' }}
           />
-        </SwiperSlide>
+          <div className="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 p-3">
+            <h5 className="card-title">Runner Shoes  </h5>
+            <p className="card-text">Best deals on running shoes.</p>
+            <a href="/shoes" className="btn btn-light btn-sm mt-2">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <SwiperSlide>
+    {/* Card 3 */}
+    <div className="col-md-4">
+      <div className="card text-white">
+        <div className="position-relative">
           <img
-            src={Banner4}
-            alt="Slide 3"
-            className="img-fluid"
-            data-swiper-parallax="-300"
-            style={{ width: '100%', maxHeight: '400px', objectFit: 'cover' }}
+           src={cardimg3}
+            className="card-img"
+            alt="Card 3"
+            style={{ height: '300px', objectFit: 'cover' }}
           />
-        </SwiperSlide>
-      </Swiper>
+          <div className="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50 p-3">
+            <h5 className="card-title">Rolex Watches </h5>
+            <p className="card-text">The best watches </p>
+            <a href="/watches" className="btn btn-light btn-sm mt-2">Shop Now</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+
 
       {/* Slider Section */}
       <div className="container my-5">
         <div className="row" style={{ position: "relative" }}>
           <div>
             <h1 className="mb-4 text-center">Best Selling Products</h1>
+            <hr/>
+            <p className="text-center" style={{ fontSize: "20px", fontWeight: "bold", fontStyle: "italic" }}>Discover Timeless Style and Modern Functionality with Our Exclusive Watch Collection.
+            Whether you're dressing for success or gearing up for adventure, our range of premium watches blends precision, design, and durability. Explore luxury timepieces, smart fitness trackers, and everyday essentials — all crafted to elevate your style and keep you on time, every time.</p>
           </div>
           <div
             className="Slider-Ovarly"

@@ -8,13 +8,13 @@ function Contact() {
     <div className="contact-container">
       <div className="contact-card">
         <h1>Contact Us</h1>
-        <p>Need help or have questions? We'd love to hear from you!</p>
+        <p>Need help or have questions? We love to hear from you!</p>
 
         <form className="contact-form">
           <input type="text" placeholder="Your Name" required />
           <input type="email" placeholder="Your Email" required />
           <textarea rows="5" placeholder="Your Message" required></textarea>
-          <Button type="submit" variant="dark">Send Message</Button>
+          <Button type="submit" variant="success">Send Message</Button>
         </form>
 
         <a href="/" className="go-back">

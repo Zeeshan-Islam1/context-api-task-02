@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 // Components
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Navbar from "./components/Navbar";
 import Main from './components/Main';
 import Contact from './components/contact';
 import About from './components/About';
@@ -14,6 +15,12 @@ import Profile from './components/profile';
 import Laptops from "../src/components/laptops";
 import Tv from "../src/components/Tv";
 import Tablet from "../src/components/tablet";
+import NotFound from "../src/components/404";
+import CartPage  from './components/CartPage';
+import Shirts from "./components/tShirts";
+import Shoes from "./components/Shoes";
+import Watches from "./components/watch";
+
 
 import ProductDetailPage from "./components/productDetail";
 import MobileDetails  from './components/MobileDetails';
@@ -88,6 +95,30 @@ const router = createBrowserRouter([
         path: "tablet/:id",
         element: <TabletDetail />
       },
+      {
+        path:"Navbar",
+        element : <Navbar />
+      },
+      {
+        path: "*",
+        element : <NotFound />
+      },
+      {
+        path: "cart",
+        element : <CartPage />
+      },
+      {
+        path: "tShirts",
+        element : <Shirts />
+      },
+      {
+        path: "shoes",
+        element : <Shoes />
+      },
+      {
+        path: "watches",
+        element : <Watches />
+      }
 
     ]
   }

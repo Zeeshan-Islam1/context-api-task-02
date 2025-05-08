@@ -1,0 +1,26 @@
+.display{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.display__content{
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.466);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+.display__content h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: Bebas Neue, sans-serif;
+    letter-spacing: 2px;
+}
+.display__content p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}

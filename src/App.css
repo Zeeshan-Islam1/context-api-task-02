@@ -15,7 +15,7 @@ body {
   color: #111;
 }
 .Modebtn {
-  padding: 15px 15px;
+  padding: 8px 30px;
   font-size: 10px;
   background: linear-gradient(45deg, #a7979a, #2e2c2d);
   border: none;
@@ -25,12 +25,9 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  text-transform: uppercase;
 }
 .Modebtn:hover {
-  background: linear-gradient(45deg, #dad3d5, #1a1112);
-  transform: scale(1.1);
-  transition: all 0.2s ease-in-out;
+color: black;
 }
 .Modebtn:active {
   transform: scale(1.1);
